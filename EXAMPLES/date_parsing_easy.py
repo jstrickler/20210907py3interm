@@ -17,8 +17,9 @@ date_strings = [  # <1>
 ]
 
 for date_string in date_strings:
+    print(f"{date_string:20s}", end=' ')
     try:
         dt = parser.parse(date_string)  # <2>
         print(dt)
     except ValueError as err:
-        print("Can't parse", date_string)
+        print(err)

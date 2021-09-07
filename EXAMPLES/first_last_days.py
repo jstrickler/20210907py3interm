@@ -11,7 +11,7 @@ def first_last_days(year):
 
 if __name__ == '__main__':
 
-    pairs = first_last_days(2020)
+    pairs = first_last_days(2021)
 
     for first, last in pairs:
         fwd = first.strftime("%A")  # <.>
