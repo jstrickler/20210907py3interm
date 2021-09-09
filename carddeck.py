@@ -1,16 +1,35 @@
+"""
+Provide the CardDeck and Card classes for playing card games.
+"""
 import random
 
 class Card:
+    """
+    Represent one playing card.
+
+    """
     def __init__(self, rank, suit):
         self._rank = rank
         self._suit = suit
 
     @property
     def rank(self):
+        """
+        The cards's rank, from 2 to A
+
+        :return:
+        """
         return self._rank
+
+    # rank = property(rank_getter, rank_setter, rank_deleter, "doc string")
 
     @property
     def suit(self):
+        """
+        This card's suit (of the four standard suits)
+
+        :return:
+        """
         return self._suit
 
     def __repr__(self):
@@ -34,9 +53,19 @@ class CardDeck:   # object
                 self._cards.append(card)
 
     def shuffle(self):
+        """
+        Randomize the cards
+
+        :return:
+        """
         random.shuffle(self._cards)
 
     def draw(self):
+        """
+        Retrieve one card from the deck
+
+        :return:
+        """
         return self._cards.pop()
 
 
@@ -93,7 +122,3 @@ class CardDeck:   # object
         new = my_type(self.dealer)
         new._cards = self.cards + other.cards
         return new
-
-
-
-

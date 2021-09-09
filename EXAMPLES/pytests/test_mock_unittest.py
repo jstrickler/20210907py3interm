@@ -20,7 +20,7 @@ class Spam():  # <2>
 #     pass
 
 def test_spam_calls_ham():   # <5>
-    _ = Spam(42)  # <6>
+    Spam(42)  # <6>
     ham.assert_called_once_with(42)  # <7>
 
 

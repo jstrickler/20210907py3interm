@@ -68,13 +68,14 @@ def populate_database(conn):
 
     fruit_data = get_fruit_data()  # [('apple', .49), ('kiwi', .38)]
 
-    try:
-        conn.executemany(INSERT, fruit_data)  # <7>
-    except sqlite3.DatabaseError as err:
-        print(err)
-        conn.rollback()
-    else:
-        conn.commit()  # <8>
+    for data in fruit_data:
+        try:
+            conn.execute(INSERT, data)  # <7>
+        except sqlite3.DatabaseError as err:
+            print(err)
+            conn.rollback()
+        else:
+            conn.commit()  # <8>
 
 
 def get_fruit_data():

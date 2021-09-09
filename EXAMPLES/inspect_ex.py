@@ -24,3 +24,4 @@ print("Function spec for Ham:", inspect.getfullargspec(ham))  # <6>
 print()
 
 print("Current frame:", inspect.getframeinfo(inspect.currentframe()))  # <7>
+

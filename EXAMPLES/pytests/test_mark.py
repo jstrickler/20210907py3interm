@@ -9,8 +9,14 @@ def test_one():
 def test_two():
     assert 1
 
+@pytest.mark.alpha
 @pytest.mark.beta  # <2>
 def test_three():
+    assert 1
+
+@pytest.mark.beta
+@pytest.mark.wombat
+def test_animal():
     assert 1
 
 if __name__ == '__main__':

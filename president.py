@@ -22,7 +22,7 @@ class President():
         # You will no longer need the _mkdate() method
         with open("DATA/presidents.txt") as pfile:
             for line in pfile:
-                flds = line.split(":")
+                flds = line.rstrip().split(":")
                 if int(flds[0]) == int(index):
                     self._lname = flds[1]
 
@@ -51,6 +51,10 @@ class President():
     def first_name(self):
         return self._fname
 
+    @first_name.setter
+    def first_name(self, value):
+        self._fname = value
+
     @property
     def birth_date(self):
         return self._bdate
@@ -78,3 +82,6 @@ class President():
     @property
     def party(self):
         return self._party
+
+    def __str__(self):
+        return f"President: {self.first_name} {self.last_name}"

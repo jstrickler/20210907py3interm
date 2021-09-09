@@ -3,6 +3,11 @@ from pytest import fixture
 
 @fixture
 def common_fixture():  # <1>
+    """
+    Silly fixture, tests are for kids!
+
+    :return:
+    """
     return "DATA"
 
 

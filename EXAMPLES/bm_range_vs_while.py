@@ -6,12 +6,14 @@ setup_code = 'values = []'  # <1>
 test_code_one = '''
 for i in range(10000):
     values.append(i)
+values.clear()
 '''  # <2>
 test_code_two = '''
 i = 0
 while i < 10000:
     values.append(i)
     i += 1
+values.clear()
 '''  # <2>
 
 t1 = Timer(test_code_one, setup_code)  # <3>

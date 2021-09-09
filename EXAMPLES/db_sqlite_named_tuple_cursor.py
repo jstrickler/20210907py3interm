@@ -12,8 +12,8 @@ def named_tuple_cursor(cursor):
     row_tuple = namedtuple('row_tuple', name_str)
 
     for cursor_row in cursor.fetchall():
-        row_tuple = row_tuple(*cursor_row)
-        yield row_tuple
+        row = row_tuple(*cursor_row)
+        yield row
 
 
 with sqlite3.connect("../DATA/presidents.db") as s3conn:
