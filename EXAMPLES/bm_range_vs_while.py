@@ -1,6 +1,5 @@
 #!/usr/bin/env python
-
-import timeit
+from timeit import Timer
 
 setup_code = 'values = []'  # <1>
 
@@ -15,8 +14,8 @@ while i < 10000:
     i += 1
 '''  # <2>
 
-t1 = timeit.Timer(test_code_one, setup_code)  # <3>
-t2 = timeit.Timer(test_code_two, setup_code)  # <3>
+t1 = Timer(test_code_one, setup_code)  # <3>
+t2 = Timer(test_code_two, setup_code)  # <3>
 
 print("test one:")
 print(t1.timeit(1000))  # <4>

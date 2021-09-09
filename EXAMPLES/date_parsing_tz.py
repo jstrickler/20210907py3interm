@@ -26,8 +26,8 @@ for date_string in date_strings:
     except ValueError as err:
         print("Cannot parse")
 
-t_ist = parser.parse(date_strings[0], tzinfos=tzinfos)
-t_est = parser.parse(date_strings[2], tzinfos=tzinfos)
-print(t_ist - t_est)
-print(t_est - t_ist)
+time_ist = parser.parse(date_strings[0], tzinfos=tzinfos)
+time_est = parser.parse(date_strings[2], tzinfos=tzinfos)
+print(time_ist - time_est)
+print(time_est - time_ist)
 

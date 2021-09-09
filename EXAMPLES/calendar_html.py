@@ -1,10 +1,9 @@
 #!/usr/bin/env python
-
 import os
-import calendar
+from calendar import HTMLCalendar
 import webbrowser
 
-hcal = calendar.HTMLCalendar()  # <1>
+hcal = HTMLCalendar()  # <1>
 formatted_month = hcal.formatmonth(2021, 9)  # <2>
 
 html_file_name = 'sample_calendar.html'

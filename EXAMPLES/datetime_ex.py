@@ -2,12 +2,18 @@
 
 from datetime import datetime, date, timedelta
 
-print("date.today():", date.today())  # <1>
 today = date.today()
-print(type(today))
-print(today.day, today.month, today.year)
+print("today:", today)  # <1>
+print("type(today): {}".format(type(today)))
+print("today.month: {}".format(today.month))
+print("today.day: {}".format(today.day))
+print("today.year: {}".format(today.year))
+print()
+
+
 
 now = datetime.now()  # <2>
+print("now: {}".format(now))
 print("now.day:", now.day)  # <3>
 print("now.month:", now.month)
 print("now.year:", now.year)
@@ -15,6 +21,7 @@ print("now.hour:", now.hour)
 print("now.minute:", now.minute)
 print("now.second:", now.second)
 print("now.microsecond:", now.microsecond)
+print()
 
 d1 = datetime(2018, 6, 13, 4, 55, 27, 8082)  # <4>
 d2 = datetime(2018, 8, 24)

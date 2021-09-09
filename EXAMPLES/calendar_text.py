@@ -1,7 +1,5 @@
 #!/usr/bin/env python
-import calendar
+from calendar import TextCalendar
 
-tcal = calendar.TextCalendar()  # <1>
+tcal = TextCalendar()  # <1>
 print(tcal.formatmonth(2021, 9))  # <2>
-
-print()
