@@ -3,7 +3,7 @@
 import logging
 
 logging.basicConfig(
-    format='%(name)s %(asctime)s %(levelname)s %(message)s', # <1>
+    format='%(levelname)s\t%(asctime)s\ts%(name)s\t%(message)s\t%(filename)s', # <1>
     filename='../TEMP/formatted.log',
     level=logging.INFO,
 )

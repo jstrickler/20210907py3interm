@@ -1,0 +1,36 @@
+INFO  2021-09-10 14:37:11,876root  this is information logging_formatted.py
+WARNING  2021-09-10 14:37:11,876root  this is a warning logging_formatted.py
+INFO  2021-09-10 14:37:11,876root  this is information logging_formatted.py
+CRITICAL  2021-09-10 14:37:11,876root  this is critical logging_formatted.py
+INFO  2021-09-10 14:37:13,698root  this is information logging_formatted.py
+WARNING  2021-09-10 14:37:13,698root  this is a warning logging_formatted.py
+INFO  2021-09-10 14:37:13,699root  this is information logging_formatted.py
+CRITICAL  2021-09-10 14:37:13,699root  this is critical logging_formatted.py
+INFO  2021-09-10 14:37:14,366root  this is information logging_formatted.py
+WARNING  2021-09-10 14:37:14,366root  this is a warning logging_formatted.py
+INFO  2021-09-10 14:37:14,366root  this is information logging_formatted.py
+CRITICAL  2021-09-10 14:37:14,366root  this is critical logging_formatted.py
+INFO  2021-09-10 14:37:15,050root  this is information logging_formatted.py
+WARNING  2021-09-10 14:37:15,050root  this is a warning logging_formatted.py
+INFO  2021-09-10 14:37:15,050root  this is information logging_formatted.py
+CRITICAL  2021-09-10 14:37:15,050root  this is critical logging_formatted.py
+INFO:2021-09-10 14:38:08,289:sroot:this is information:logging_formatted.py
+WARNING:2021-09-10 14:38:08,290:sroot:this is a warning:logging_formatted.py
+INFO:2021-09-10 14:38:08,290:sroot:this is information:logging_formatted.py
+CRITICAL:2021-09-10 14:38:08,290:sroot:this is critical:logging_formatted.py
+INFO:2021-09-10 14:38:08,865:sroot:this is information:logging_formatted.py
+WARNING:2021-09-10 14:38:08,865:sroot:this is a warning:logging_formatted.py
+INFO:2021-09-10 14:38:08,865:sroot:this is information:logging_formatted.py
+CRITICAL:2021-09-10 14:38:08,865:sroot:this is critical:logging_formatted.py
+INFO	2021-09-10 14:38:47,077	sroot	this is information	logging_formatted.py
+WARNING	2021-09-10 14:38:47,078	sroot	this is a warning	logging_formatted.py
+INFO	2021-09-10 14:38:47,078	sroot	this is information	logging_formatted.py
+CRITICAL	2021-09-10 14:38:47,078	sroot	this is critical	logging_formatted.py
+INFO	2021-09-10 14:38:47,381	sroot	this is information	logging_formatted.py
+WARNING	2021-09-10 14:38:47,381	sroot	this is a warning	logging_formatted.py
+INFO	2021-09-10 14:38:47,381	sroot	this is information	logging_formatted.py
+CRITICAL	2021-09-10 14:38:47,381	sroot	this is critical	logging_formatted.py
+INFO	2021-09-10 14:38:47,631	sroot	this is information	logging_formatted.py
+WARNING	2021-09-10 14:38:47,631	sroot	this is a warning	logging_formatted.py
+INFO	2021-09-10 14:38:47,631	sroot	this is information	logging_formatted.py
+CRITICAL	2021-09-10 14:38:47,631	sroot	this is critical	logging_formatted.py
