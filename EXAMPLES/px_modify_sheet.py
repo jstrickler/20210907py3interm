@@ -19,6 +19,8 @@ def make_date(date_str):
     return date(int(year), int(month), int(day))
 
 
+
+
 def add_age_at_inauguration(ws):
     """Add a new column with age of inauguration"""
     new_col = ws.max_column + 1
@@ -30,6 +32,8 @@ def add_age_at_inauguration(ws):
         raw_age_took_office = inaugural_date - birth_date
         age_took_office = raw_age_took_office.days / 365.25
         ws.cell(row=row, column=new_col).value = age_took_office
+
+    ws['M5'] = "wombat"
 
 
 if __name__ == '__main__':

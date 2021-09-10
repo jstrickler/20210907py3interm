@@ -9,12 +9,18 @@ def main():
 
     print_first_and_last_names(ws)
 
+    range = ws['A1:Z100']
+    print(range)
+
+    # for row in range[-5:]:
+    #     print(row[0].value)
 
 def print_first_and_last_names(ws):
     """Print first and last names of all presidents"""
-    pres_range = ws['B2':'C47']  # cell range
+    pres_range = ws['B2':'C47']  # cell range  ['B2:C47']
     for row in pres_range:  # row object
         print(row[1].value, row[0].value)
+
 
 
 if __name__ == '__main__':

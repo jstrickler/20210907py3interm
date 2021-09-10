@@ -45,6 +45,9 @@ def create_hidden_sheet(wb):
     ws = wb.create_sheet(title="secret plans")
     ws.sheet_state = "hidden"
 
+    # ws.protection.sheet = True
+    # ws["A1"].protection = Protection(locked=False)
+
 
 if __name__ == '__main__':
     main()
