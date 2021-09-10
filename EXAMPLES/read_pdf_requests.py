@@ -6,6 +6,7 @@ import os
 import requests
 
 url = 'https://www.nasa.gov/pdf/739318main_ISS%20Utilization%20Brochure%202012%20Screenres%203-8-13.pdf'  # <1>
+
 saved_pdf_file = 'nasa_iss.pdf'  # <2>
 
 response = requests.get(url)  # <3>

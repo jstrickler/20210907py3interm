@@ -22,3 +22,5 @@ with paramiko.SSHClient() as ssh:  # <1>
     print("STDERR:")
     print(stderr.read().decode())  # <6>
     print('-' * 60)
+
+    del stdin
